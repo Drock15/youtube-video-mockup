@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #fff; }
+
+li {
+  list-style: none; }
+  li a {
+    text-decoration: none;
+    color: #555; }
