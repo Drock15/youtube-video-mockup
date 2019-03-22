@@ -1,0 +1,73 @@
+@import "config";
+
+// Menu Button
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: set-text-color($primary-color);
+    @include easeOut;
+  }
+
+  // Rotate Into X With Menu Lines
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
+
+//Menu Overlay
+.menu {
+  position: fixed;
+  top: 0;
+  width: 20vw;
+  height: 100%;
+  visibility: hidden;
+  background: #444;
+
+  &.show {
+    visibility: visible;
+  }
+
+  .menu-nav {
+    .nav-item {
+      margin-top: 40px;
+      margin-bottom: 2vh;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.search-settings {
+  display: flex;
+  margin-left: 20vw;
+
+  .settings-nav {
+    .nav-item {
+      display: inline;
+      padding: 0.5rem;
+    }
+  }
+}

@@ -1,4 +1,5 @@
-$primary-color: #fff;
+@import "menu";
+@import "config";
 
 * {
   box-sizing: border-box;
@@ -13,6 +14,6 @@ li {
 
   a {
     text-decoration: none;
-    color: #555;
+    color: #444;
   }
 }
