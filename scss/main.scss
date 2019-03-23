@@ -7,6 +7,22 @@
 
 body {
   background: $primary-color;
+  margin: 0;
+
+  header {
+    position: fixed;
+    padding: 10px 10px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.719);
+    z-index: 2;
+    background: #fff;
+  }
+
+  .container {
+    position: absolute;
+    top: 10vh;
+    margin: 0 20px;
+  }
 }
 
 li {
@@ -15,5 +31,44 @@ li {
   a {
     text-decoration: none;
     color: #444;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+@media (min-width: 1001px) {
+  iframe {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .search-settings {
+    .search-bar {
+      form {
+        input {
+          width: 30vw;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .search-settings {
+    .search-bar {
+      form {
+        margin-left: 20vw;
+        input {
+          display: none;
+        }
+      }
+    }
+    .settings-nav {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
