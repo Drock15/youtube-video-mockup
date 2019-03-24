@@ -1,4 +1,4 @@
-// Cashe the DOM
+// Cache the DOM
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav1 = document.querySelector(".menu-nav1");
