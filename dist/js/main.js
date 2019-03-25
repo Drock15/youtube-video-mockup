@@ -4,6 +4,10 @@ const menu = document.querySelector(".menu");
 const menuNav1 = document.querySelector(".menu-nav1");
 const menuNav2 = document.querySelector(".menu-nav2");
 const navItems = document.querySelectorAll(".nav-item");
+const showDescriptionBtn = document.querySelector(".description-show-hide-btn");
+const descriptionParagraph = document.querySelector("#description-paragraph");
+const caretIcon = document.querySelector("#caret");
+const showMoreOrLessText = document.querySelector("#show-more-less");
 
 //Set Initial State of Menu
 let showMenu = false;
@@ -29,5 +33,31 @@ function toggleMenu() {
 
     //Set Menu State
     showMenu = false;
+  }
+}
+
+// Description paragraph
+let showDescription = false;
+caretIcon.classList.add("fa-caret-down");
+
+showDescriptionBtn.addEventListener("click", toggleShowDescription);
+
+function toggleShowDescription() {
+  if (!showDescription) {
+    showMoreOrLessText.innerHTML = "Show Less";
+    descriptionParagraph.style.display = "contents";
+    caretIcon.classList.remove("fa-caret-down");
+    caretIcon.classList.add("fa-caret-up");
+
+    //Set Description State
+    showDescription = true;
+  } else {
+    showMoreOrLessText.innerHTML = "Show More";
+    descriptionParagraph.style.display = "none";
+    caretIcon.classList.remove("fa-caret-up");
+    caretIcon.classList.add("fa-caret-down");
+
+    //Set Description State
+    showDescription = false;
   }
 }

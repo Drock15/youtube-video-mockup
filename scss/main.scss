@@ -16,14 +16,14 @@ body {
     position: fixed;
     padding: 10px 10px 0;
     width: 100%;
-    border-bottom: 1px solid rgba(68, 68, 68, 0.719);
     z-index: 2;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.719);
     background: #fff;
   }
 
   .container {
-    position: absolute;
-    top: 10vh;
+    position: relative;
+    top: 120px;
     margin: 0 20px;
   }
 }
@@ -64,6 +64,14 @@ iframe {
       li {
         display: inline;
       }
+    }
+  }
+}
+
+article {
+  .description {
+    #description-paragraph {
+      display: none;
     }
   }
 }
