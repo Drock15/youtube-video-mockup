@@ -39,6 +39,10 @@
   body .container {
     top: 20vh; } }
 
+@media (min-width: 400px) and (max-width: 499px) {
+  .menu .menu-nav1 {
+    margin-top: 66px; } }
+
 .menu-btn {
   position: absolute;
   top: 15px;
@@ -155,6 +159,10 @@
     padding: 0; }
   body .container {
     top: 20vh; } }
+
+@media (min-width: 400px) and (max-width: 499px) {
+  .menu .menu-nav1 {
+    margin-top: 66px; } }
 
 * {
   box-sizing: border-box; }
