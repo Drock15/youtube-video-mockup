@@ -62,6 +62,7 @@
   width: 20vw;
   height: 100vh;
   background: #f5f5f5;
+  overflow: scroll;
   @include easeIn;
 
   &.show {
