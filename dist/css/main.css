@@ -210,5 +210,8 @@ iframe {
     .title-btns-container .video-buttons .btns li {
       display: inline; }
 
+.video-title {
+  font-weight: bold; }
+
 article .description #description-paragraph {
   display: none; }
