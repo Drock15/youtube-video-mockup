@@ -5,9 +5,6 @@
 }
 
 @media (max-width: 1000px) {
-  .menu {
-    width: 15vw;
-  }
   .search-settings {
     .search-bar {
       form {
@@ -24,10 +21,8 @@
   }
 }
 @media (max-width: 768px) {
-  .menu {
-    width: 30vw;
-  }
   .search-settings {
+    margin-left: 100px;
     .search-bar {
       form {
         margin-left: 20vw;
@@ -49,9 +44,6 @@
 }
 @media (max-width: 500px) {
   .menu {
-    width: 45vw;
-    left: -45vw;
-
     .menu-nav1,
     .menu-nav2 {
       margin-top: 87px;

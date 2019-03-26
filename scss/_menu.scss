@@ -58,8 +58,8 @@
 .menu {
   position: absolute;
   top: 0;
-  left: -30vw;
-  width: 20vw;
+  left: -200px;
+  width: 200px;
   height: 100vh;
   background: #f5f5f5;
   overflow: scroll;
@@ -90,7 +90,7 @@
 // Search nav
 .search-settings {
   display: flex;
-  margin-left: 20vw;
+  margin-left: 200px;
 
   .search-bar {
     form {
@@ -110,7 +110,7 @@
   }
 
   .settings-nav {
-    margin: 5px auto 0;
+    margin: 5px 0;
     margin-bottom: 30px;
     .nav-item {
       display: inline;
