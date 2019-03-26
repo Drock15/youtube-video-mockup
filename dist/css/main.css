@@ -205,3 +205,6 @@ iframe {
 
 article .description #description-paragraph {
   display: none; }
+
+.comments-container {
+  margin-bottom: 40px; }
