@@ -22,10 +22,9 @@
 }
 @media (max-width: 768px) {
   .search-settings {
-    margin-left: 100px;
     .search-bar {
       form {
-        margin-left: 20vw;
+        justify-content: center;
         input {
           display: none;
         }
@@ -43,10 +42,23 @@
   }
 }
 @media (max-width: 500px) {
+  .nav-all-container.push-content {
+    margin-left: 175px;
+  }
   .menu {
+    left: -150px;
+    width: 150px;
     .menu-nav1,
     .menu-nav2 {
-      margin-top: 87px;
+      margin-top: 67px;
+
+      .nav-item {
+        font-size: 0.8rem;
+      }
+    }
+
+    &-btn.close {
+      left: 151px;
     }
   }
   .branding {

@@ -11,22 +11,30 @@
     top: 30vh; } }
 
 @media (max-width: 768px) {
-  .search-settings {
-    margin-left: 100px; }
-    .search-settings .search-bar form {
-      margin-left: 20vw; }
-      .search-settings .search-bar form input {
-        display: none; }
-    .search-settings .settings-nav {
-      margin-left: 0;
-      margin-right: 0; }
+  .search-settings .search-bar form {
+    justify-content: center; }
+    .search-settings .search-bar form input {
+      display: none; }
+  .search-settings .settings-nav {
+    margin-left: 0;
+    margin-right: 0; }
   body .container {
     top: 25vh; } }
 
 @media (max-width: 500px) {
-  .menu .menu-nav1,
-  .menu .menu-nav2 {
-    margin-top: 87px; }
+  .nav-all-container.push-content {
+    margin-left: 175px; }
+  .menu {
+    left: -150px;
+    width: 150px; }
+    .menu .menu-nav1,
+    .menu .menu-nav2 {
+      margin-top: 67px; }
+      .menu .menu-nav1 .nav-item,
+      .menu .menu-nav2 .nav-item {
+        font-size: 0.8rem; }
+    .menu-btn.close {
+      left: 151px; }
   .branding .fab {
     font-size: 1rem; }
   .search-settings .settings-nav {
@@ -40,6 +48,7 @@
 
 .menu-btn {
   position: absolute;
+  flex: 1;
   top: 15px;
   z-index: 3;
   cursor: pointer;
@@ -51,24 +60,14 @@
     background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+    left: 200px; }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 3px); }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
-
-.branding {
-  position: absolute;
-  top: 15px;
-  left: 60px;
-  z-index: 3; }
-  .branding .fab {
-    font-size: 1.2rem;
-    color: red; }
-    .branding .fab #text {
-      color: #000; }
 
 .menu {
   position: absolute;
@@ -95,19 +94,40 @@
       .menu .menu-nav2 .nav-item a {
         color: #000; }
 
-.search-settings {
+.nav-all-container {
   display: flex;
-  margin-left: 200px; }
-  .search-settings .search-bar form {
-    width: 100%; }
-    .search-settings .search-bar form input {
-      width: 45vw;
-      padding: 0.3rem; }
-    .search-settings .search-bar form button {
-      padding: 0.3rem 1rem;
-      border: 1px solid #444;
-      background: rgba(218, 218, 218, 0.5); }
+  margin-left: 50px;
+  height: 57px; }
+  .nav-all-container.push-content {
+    margin-left: 250px; }
+
+.branding {
+  flex: 1;
+  top: 15px;
+  left: 60px;
+  z-index: 3; }
+  .branding .fab {
+    font-size: 1.2rem;
+    color: red; }
+    .branding .fab #text {
+      color: #000; }
+
+.search-settings {
+  flex: 4;
+  display: flex; }
+  .search-settings .search-bar {
+    flex: 1; }
+    .search-settings .search-bar form {
+      display: flex; }
+      .search-settings .search-bar form input {
+        width: 45vw;
+        padding: 0.3rem; }
+      .search-settings .search-bar form button {
+        padding: 0.3rem 1rem;
+        border: 1px solid #444;
+        background: rgba(218, 218, 218, 0.5); }
   .search-settings .settings-nav {
+    flex: 1;
     margin: 5px 0;
     margin-bottom: 30px; }
     .search-settings .settings-nav .nav-item {
@@ -127,22 +147,30 @@
     top: 30vh; } }
 
 @media (max-width: 768px) {
-  .search-settings {
-    margin-left: 100px; }
-    .search-settings .search-bar form {
-      margin-left: 20vw; }
-      .search-settings .search-bar form input {
-        display: none; }
-    .search-settings .settings-nav {
-      margin-left: 0;
-      margin-right: 0; }
+  .search-settings .search-bar form {
+    justify-content: center; }
+    .search-settings .search-bar form input {
+      display: none; }
+  .search-settings .settings-nav {
+    margin-left: 0;
+    margin-right: 0; }
   body .container {
     top: 25vh; } }
 
 @media (max-width: 500px) {
-  .menu .menu-nav1,
-  .menu .menu-nav2 {
-    margin-top: 87px; }
+  .nav-all-container.push-content {
+    margin-left: 175px; }
+  .menu {
+    left: -150px;
+    width: 150px; }
+    .menu .menu-nav1,
+    .menu .menu-nav2 {
+      margin-top: 67px; }
+      .menu .menu-nav1 .nav-item,
+      .menu .menu-nav2 .nav-item {
+        font-size: 0.8rem; }
+    .menu-btn.close {
+      left: 151px; }
   .branding .fab {
     font-size: 1rem; }
   .search-settings .settings-nav {

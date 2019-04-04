@@ -4,6 +4,7 @@ const menu = document.querySelector(".menu");
 const menuNav1 = document.querySelector(".menu-nav1");
 const menuNav2 = document.querySelector(".menu-nav2");
 const navItems = document.querySelectorAll(".nav-item");
+const navBar = document.querySelector(".nav-all-container");
 const showDescriptionBtn = document.querySelector(".description-show-hide-btn");
 const descriptionParagraph = document.querySelector("#description-paragraph");
 const caretIcon = document.querySelector("#caret");
@@ -21,6 +22,7 @@ function toggleMenu() {
     menuNav1.classList.add("show");
     menuNav2.classList.add("show");
     navItems.forEach(item => item.classList.add("show"));
+    navBar.classList.add("push-content");
 
     //Set Menu State
     showMenu = true;
@@ -30,6 +32,7 @@ function toggleMenu() {
     menuNav1.classList.remove("show");
     menuNav2.classList.remove("show");
     navItems.forEach(item => item.classList.remove("show"));
+    navBar.classList.remove("push-content");
 
     //Set Menu State
     showMenu = false;
